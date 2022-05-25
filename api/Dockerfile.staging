@@ -1,0 +1,19 @@
+FROM python:3.6
+
+WORKDIR /usr/src/app
+
+# set environment variables
+ENV PYTHONUNBUFFERED 1
+
+# copy project
+COPY . /usr/src/app
+
+RUN [ -d  /usr/src/app/static/images/symbol_crypto ] || mkdir /usr/src/app/static/images/symbol_crypto -p
+
+RUN [ -d  /usr/src/app/static/images/user_profile ] || mkdir /usr/src/app/static/images/user_profile -p
+
+RUN pip install -r requirements.txt
+
+EXPOSE 8000
+
+CMD yes | python manage.py makemigrations predict && python manage.py migrate && python manage.py runserver 0.0.0.0:8000 --noreload && python manage.py test predict  

@@ -1,0 +1,20 @@
+{
+  "details": "Details",
+  "info:details": "View the details of a crypto pair or modify it.",
+  "predictions": "Predictions",
+  "info:checkPair": "View the status of each pair's predictions.",
+  "updatePair": "Modify a pair",
+  "info:uploadImage1": "Upload the image of the first crypto then select the symbol from the predefined list.",
+  "info:uploadImage2": "Upload the image of the second crypto then select the symbol from the predefined list.",
+  "symbol1": "Symbol 1",
+  "symbol2": "Symbol 2",
+  "crypto1": "Crypto 1",
+  "crypto2": "Crypto 2",
+  "predictionIntervals": "Intervalles de prédictions",
+  "info:predictionIntervals": "Select the prediction intervals to train for this pair.",
+  "updateCouple:message1": "Updating",
+  "updateCouple:message2": "has been done succesfully.",
+  "type": "Type",
+  "averageAccuracy": "Average accuracy",
+  "uploadMsg": "Drag and drop your image here or click here."
+}

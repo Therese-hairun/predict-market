@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.665" y1="0.159" x2="0.419" y2="0.751" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#2aabee"/>
+      <stop offset="1" stop-color="#229ed9"/>
+    </linearGradient>
+  </defs>
+  <g id="Telegram_2019_Logo" transform="translate(0)">
+    <circle id="Ellipse_924" data-name="Ellipse 924" cx="12" cy="12" r="12" transform="translate(0 0)" fill="url(#linear-gradient)"/>
+    <path id="Tracé_42488" data-name="Tracé 42488" d="M54.687,70.243s1.249-.486,1.145.694c-.035.486-.347,2.185-.59,4.023l-.832,5.445s-.069.8-.694.936a2.767,2.767,0,0,1-1.734-.624c-.139-.1-2.6-1.665-3.468-2.428a.657.657,0,0,1,.035-1.11l3.642-3.468c.416-.416.832-1.387-.9-.208L46.432,76.8a2.038,2.038,0,0,1-1.6.035l-2.254-.694s-.832-.52.59-1.04C46.641,73.469,50.906,71.8,54.687,70.243Z" transform="translate(-38.109 -63.133)" fill="#fff"/>
+  </g>
+</svg>

@@ -1,0 +1,83 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-26 14:17+0300\n"
+"PO-Revision-Date: 2021-12-08 11:47+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: fr\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+"X-Generator: Poedit 3.0\n"
+
+#: predict/cron.py:52
+msgid "Subscription will expire"
+msgstr "L'abonnement expirera"
+
+#: predict/cron.py:53
+msgid "Your subscription will expire"
+msgstr "Votre abonnement expirera"
+
+#: predict/cron.py:54
+msgid "Your subscription will expire on"
+msgstr "Votre abonnement expirera le"
+
+#: predict/views.py:261 predict/views.py:444
+msgid "Hello"
+msgstr "Bonjour"
+
+#: predict/views.py:262
+msgid "We have detected a login attempt on your account on"
+msgstr "Nous avons détecté une tentative de connexion sur votre compte le"
+
+#: predict/views.py:272
+msgid "Attempting to connect"
+msgstr "Tentative de connexion"
+
+#: predict/views.py:273
+msgid "Attempting to log into your account"
+msgstr "Tentative de connexion sur votre compte"
+
+#: predict/views.py:352 predict/views.py:445
+msgid "Here is your"
+msgstr "Voici votre"
+
+#: predict/views.py:353
+msgid "verification link"
+msgstr "Lien de vérification"
+
+#: predict/views.py:363
+msgid "Verification link"
+msgstr "Lien de vérification"
+
+#: predict/views.py:364
+msgid "Here is your verification link"
+msgstr "Voici votre lien de vérification"
+
+#: predict/views.py:446
+msgid "password reset link"
+msgstr "lien de réinitialisation de mot de passe"
+
+#: predict/views.py:452
+msgid "Reset password"
+msgstr "Réinitialisation de  mot de passe"
+
+#: predict/views.py:453
+msgid "Reset link"
+msgstr "Lien de réinitialisation"
+
+#: predict/views.py:3270
+msgid "Use my code"
+msgstr "Utiliser mon code"
+
+#: predict/views.py:3271
+msgid "to get free days and credits on Predict Market"
+msgstr "pour obtenir des jours gratuits et des crédits sur Predict Market"

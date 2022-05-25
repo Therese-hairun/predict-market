@@ -1,0 +1,45 @@
+version: '3'
+services:
+  db:
+    image: mysql:5.7
+    restart: always
+    env_file:
+      - .env.db
+    volumes:
+      - ./data/mysql:/var/lib/mysql
+      - ./conf/mysqld.cnf:/etc/mysql/mysql.conf.d/mysqld.cnf
+    networks:
+      - predict-market
+
+  adminer:
+    image: adminer
+    restart: on-failure
+    labels:
+      traefik.frontend.rule: Host:adminer-predict-preprod.hairun-technology.com
+      traefik.enable: true
+      traefik.port: 8080
+      traefik.frontend.entryPoints: https,http
+      traefik.frontend.redirect.entryPoint: https
+    networks:
+      - predict-market
+
+  api:
+    image: gitlab.leviatan.fr:5050/predict-market/api/preprod/api-predict:preprod
+    restart: always
+    labels:
+      traefik.frontend.rule: Host:api-predict-market-preprod.hairun-technology.com
+      traefik.enable: true
+      traefik.port: 8000
+      traefik.frontend.entryPoints: https,http
+      traefik.frontend.redirect.entryPoint: https
+    env_file:
+      - .env.api
+    depends_on:
+      - db
+    networks:
+      - predict-market    
+
+networks:
+  predict-market:
+    external:
+      name: traefik_predictmarket-preprod

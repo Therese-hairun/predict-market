@@ -1,0 +1,36 @@
+version: '3'
+services:
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile.staging
+    restart: always
+    ports:
+      - 8000:8000
+    environment:
+      DB_NAME: 'prediction'
+      DB_USER: 'predictor'
+      DB_PASSWORD: 'pass'
+      DB_HOST: 'db'
+      DB_PORT: 3306
+    depends_on:
+      - db
+    networks:
+      - predict
+
+  db:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_DATABASE: 'prediction'
+      MYSQL_USER: 'predictor'
+      MYSQL_PASSWORD: 'pass'
+      MYSQL_ROOT_PASSWORD: 'pass'
+    volumes:
+      - ./conf/mysqld.cnf:/etc/mysql/mysql.conf.d/mysqld.cnf
+    networks:
+      - predict
+
+networks:
+  predict:
+    driver: bridge

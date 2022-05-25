@@ -1,0 +1,13 @@
+{
+  "allCouples": "Toutes les paires",
+  "pair": "Paire",
+  "lastValue": "Dernière valeur",
+  "on24h": "sur 24h",
+  "pairUnavailable": "Paire indisponible",
+  "pairUnavailableMessage": "Cette paire n'est pas encore disponible sur Predictmarket, demandez son référencement",
+  "pairUnaivalableDetail": "Cette paire n'est pas encore disponible sur Predictmarket mais vous pouvez en faire la demande à l'administrateur.",
+  "request": "Faire une demande",
+  "requestSend": "Demande envoyée",
+  "exampleCouple": "Exemple: BTC/USDT",
+  "numberCoupleReached": "Vous avez atteint le nombre de couples autorisés sur votre abonnement"
+}

@@ -1,0 +1,28 @@
+{
+  "pairManagement": "Gestion des paires",
+  "addPair": "Ajouter une paire",
+  "paireDispo:message": "Recherchez une paire de crypto afin de pouvoir la modifier ou créez de nouvelles paires",
+  "pair": "Paire",
+  "views": "Vues",
+  "success:addCouple1": "L'ajout du couple",
+  "success:addCouple2": "a bien été effectué.",
+  "pairsAvailable": "Paires disponibles",
+
+  "pairRequests": "Demandes de paires",
+  "demandePaire:message": "Rechercher un couple de crypto demandé par vos utilisateurs pour le valider.",
+  "requestedCouple": "Couple demandé",
+  "numberRequests": "Nombre de demandes",
+  "lastRequestDate": "Dernière date de demande",
+  "validate": "Valider",
+  "validatePair": "Valider une paire",
+
+  "errorSelectedCrypto": "Veuillez choisir un crypto 1.",
+  "errorSelectedCrypto1": "Veuillez choisir un crypto 2.",
+  "errorInterval": "Veuillez choisir un intervalle",
+  "errorSymbol1": "Veuillez ajouter une image 1",
+  "errorSymbol2": "Veuillez ajouter une image 2",
+  "errorCoupleExist": "Le couple que vous valider existe déjà",
+  "errorCombination": "Combinaison de couple invalide.",
+
+  "info:search": "Taper la touche Entrée pour lancer la recherche"
+}

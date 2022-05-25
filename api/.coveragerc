@@ -1,0 +1,18 @@
+[run]
+omit = 
+    */tests/*
+    */migrations/*
+    */__init__.py
+    */.env
+    manage.py
+    */cron.py
+    */auth.py
+    */utils.py
+    */serializers.py 
+    */predict/views.py
+    
+
+
+
+    
+

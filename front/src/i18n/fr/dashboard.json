@@ -1,0 +1,18 @@
+{
+  "dashboard": "Tableau de bord",
+  "availableLocation": "Emplacement dispo.",
+  "myPairs": "Mes paires",
+  "myFavorites": "Mes favoris",
+  "momentPairs": "Les paires du moment",
+  "explosivePairs": "Les paires les plus explosive",
+  "yourSubscription": "Votre abonnement",
+  "expiryAt": "expire le",
+  "topicalCouple": "Couple d'actualités",
+  "unlimited": "illimité",
+  "emptyMyPair": "Emplacement de couple crypto vide",
+  "emptyMyfavorite": "Couple de crypto favoris vide",
+  "emptyMyPairMessage": "Vous n'avez pas encore de couple de crypto ? Consulter les onglets 'paires du moment' et 'paires les plus explosives' puis ajouter vos couples préférés ou faîtes une recherche dans le menu 'Tous les couples'.",
+  "emptyMyfavoriteMessage": "La liste de vos couples de crypto favoris s'affichera ici. Pour en ajouter dans cette section, il vous suffit de cliquer sur l'icône de cœur.",
+  "emptyMomentPairMessage": "La liste des couples du moment s'affichera ici. Pour en ajouter dans votre section, il vous suffit de cliquer sur l'icône de cœur.",
+  "emptyExplosivePairMessage": "La liste des couples de crypto les plus explosives s'affichera ici. Pour en ajouter dans votre section, il vous suffit de cliquer sur l'icône de cœur."
+}

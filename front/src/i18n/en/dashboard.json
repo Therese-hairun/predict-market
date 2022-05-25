@@ -1,0 +1,18 @@
+{
+  "dashboard": "Dashboard",
+  "availableLocation": "Available location",
+  "myPairs": "My pairs",
+  "myFavorites": "My favorites",
+  "momentPairs": "The pairs of the moment",
+  "explosivePairs": "The most explosive pairs",
+  "yourSubscription": "Your subscription",
+  "expiryAt": "Expires on",
+  "topicalCouple": "Topical couple",
+  "unlimited": "unlimited",
+  "emptyMyPair": "No couple owned yet",
+  "emptyMyfavorite": "No favorite yet",
+  "emptyMyPairMessage": "You don't have any crypto? Check 'the pairs of the moment' and 'The most explosive pairs' so add the couples you like or search in 'All couples'",
+  "emptyMyfavoriteMessage": "All your favorites couple will be displayed here, to add, just click on heart button",
+  "emptyMomentPairMessage": "The pairs of the moment will be displayed here",
+  "emptyExplosivePairMessage": "Explosive pairs will be displayed here"
+}

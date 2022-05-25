@@ -1,0 +1,20 @@
+{
+  "details": "Détails",
+  "info:details": "Consultez le détail d'une paire de cryptos ou modifiez-la.",
+  "predictions": "Prédictions",
+  "info:checkPair": "Consultez l'état des prédictions de chaque paire.",
+  "updatePair": "Modifier une paire",
+  "info:uploadImage1": "Uploadez l'image de la première crypto puis sélectionnez le symbole dans la liste prédéfinie.",
+  "info:uploadImage2": "Uploadez l'image de la seconde crypto puis sélectionnez le symbole dans la liste prédéfinie.",
+  "symbol1": "Symbole 1",
+  "symbol2": "Symbole 2",
+  "crypto1": "Crypto 1",
+  "crypto2": "Crypto 2",
+  "predictionIntervals": "Intervalles de prédictions",
+  "info:predictionIntervals": "Sélectionnez les intervalles de prédictions à entraîner pour cette  paire.",
+  "updateCouple:message1": "La modification du couple",
+  "updateCouple:message2": "a bien été effectuée.",
+  "type": "Type",
+  "averageAccuracy": "Précision moyenne",
+  "uploadMsg": "Glisser et déposer votre image ici ou cliquer ici."
+}

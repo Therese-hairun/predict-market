@@ -1,0 +1,18 @@
+version: "3"
+services:
+  web:
+    image: predict-market-web:staging
+    restart: always
+    labels:
+      traefik.frontend.rule: Host:predict-market-staging.hairun-technology.com
+      traefik.enable: true
+      traefik.port: 80
+      traefik.frontend.entryPoints: https,http
+      traefik.frontend.redirect.entryPoint: https
+    networks:
+      - predictmarket
+
+networks:
+  predictmarket:
+    external:
+      name: traefik_predictmarket-staging

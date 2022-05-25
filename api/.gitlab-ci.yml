@@ -1,0 +1,119 @@
+stages:
+  - build
+  - deploy
+
+variables:
+  DOCKER_IMAGE_STAGING: gitlab.leviatan.fr:5050/predict-market/api/staging/api-predict:staging
+  DOCKER_IMAGE_PREPROD: gitlab.leviatan.fr:5050/predict-market/api/preprod/api-predict:preprod
+
+##########################################"general anchors"##########################################################
+.develop_only:
+  only:
+    refs: &develop_only
+      - develop
+
+.preprod_only:
+  only:
+    refs: &preprod_only
+      - preprod
+
+######################### build #####################
+.log_to_docker: &log_to_docker
+  image: docker:latest
+  services:
+    - docker:18.09-dind
+  retry:
+    max: 1
+    when:
+      - script_failure
+  before_script:
+    - "docker login -u $CI_REGISTRY_USER -p $CI_REGISTRY_PASSWORD $CI_REGISTRY"
+  after_script:
+    - docker logout $CI_REGISTRY
+
+.build_image: &build_image
+  <<: *log_to_docker
+  stage: build
+  variables:
+    IMAGE: IMAGE
+    FOLDER: FOLDER
+    FILENAME: Dockerfile
+    ARG: ARG
+    TAG: tag
+  script:
+    - docker build -t $IMAGE:$TAG $ARG -f $FOLDER/$FILENAME $FOLDER
+    - docker push $IMAGE:$TAG
+
+build_api_staging:
+  <<: *build_image
+  variables:
+    IMAGE: ${CI_REGISTRY_IMAGE}/staging/api-predict
+    FOLDER: .
+    FILENAME: Dockerfile.staging
+    ARG: ""
+    TAG: staging
+  only:
+    refs: *develop_only
+
+build_api_preprod:
+  <<: *build_image
+  variables:
+    IMAGE: ${CI_REGISTRY_IMAGE}/preprod/api-predict
+    FOLDER: .
+    FILENAME: Dockerfile.preprod
+    ARG: ""
+    TAG: preprod
+  only:
+    refs: *preprod_only
+
+##########################################"deploy"##########################################################
+#anchor
+.deploy_all: &deploy_all
+  stage: deploy
+  image: alpine:latest
+  services:
+    - docker:18.09-dind
+  variables:
+    USER: ""
+    HOST: ""
+    PATH_COMPOSE: "."
+    COMPOSE_FILE: ""
+    IMAGE: ""
+    TAG: ""
+  before_script:
+    - apk update
+    - apk add --update openssh-client bash
+    - mkdir -p ~/.ssh
+    - eval $(ssh-agent -s)
+    - bash -c 'ssh-add <(echo "$SSH_PRIVATE_KEY")'
+    - echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config
+  script:
+    - scp $COMPOSE_FILE $USER@$HOST:$PATH_COMPOSE/docker-compose.yml
+    #- ssh $USER@$HOST "cd $PATH_COMPOSE && docker --config . pull $IMAGE && docker-compose up -d"
+    - ssh $USER@$HOST "cd $PATH_COMPOSE && docker pull $IMAGE && docker-compose up -d"
+
+#staging
+deploy_api_staging:
+  <<: *deploy_all
+  variables:
+    USER: $DEPLOYMENT_USER
+    HOST: $DEPLOYMENT_HOST
+    PATH_COMPOSE: "/root/Hairun-Project/predictmarket-api-staging"
+    COMPOSE_FILE: "docker-compose.staging.yml"
+    IMAGE: $DOCKER_IMAGE_STAGING
+    TAG: staging
+  only:
+    refs: *develop_only
+
+#preprod
+deploy_api_preprod:
+  <<: *deploy_all
+  variables:
+    USER: $DEPLOYMENT_USER
+    HOST: $DEPLOYMENT_HOST
+    PATH_COMPOSE: "/root/Hairun-Project/predictmarket-api-preprod"
+    COMPOSE_FILE: "docker-ci-preprod.yml"
+    IMAGE: $DOCKER_IMAGE_PREPROD
+    TAG: preprod
+  only:
+    refs: *preprod_only

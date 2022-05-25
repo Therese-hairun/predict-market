@@ -1,0 +1,12 @@
+{
+  "dashboard": "Tableau de bord",
+  "allCouples": "Tous les couples",
+  "subscription": "Abonnement",
+  "support": "Support",
+
+  "manageUsers": "Gestion utilisateurs",
+  "manageTickets": "Gestion tickets",
+  "manageCouples": "Gestion couples",
+  "manageSubscription": "Gestion Abonnement",
+  "discountCode": "Codes de réduction"
+}

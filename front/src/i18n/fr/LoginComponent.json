@@ -1,0 +1,54 @@
+{
+  "connexion": "Connexion",
+  "left-thanks": "Merci de vous connecter à votre compte",
+  "right-thanks": " pour accéder à vos prédictions de crypto.",
+  "login": "Se connecter",
+  "remember-me": "Se souvenir de moi",
+  "forgotten-password": "Mot de passe oublié ?",
+  "no-account": "Vous n'avez pas encore de compte ?",
+  "subscribe": "S'inscrire",
+  "welcome": "Bienvenue sur",
+  "emailResent": "Email renvoyé",
+  "buttonWillAppear": "Le bouton apparaitra dans",
+  "didntReceiveMail": "Vous n'avez pas reçu d'e-mail ? Vérifier vos spam ou cliquer sur le bouton ci-dessous.",
+
+  "logIn": "Connectez-vous",
+  "haveAccount": "Vous avez déjà un compte ?",
+  "resendMail": "Renvoyez l'email",
+  "info:link": "Si vous n'avez pas encore reçu d'e-mail, cliquer sur le lien",
+  "info:link1": "ci-dessous pour la renvoyer.",
+
+  "forgetPassword:titreForm": "Récupération de mot de passe",
+  "forgetPassword:descriptionForm": "Renseignez le champ ci-dessous. Nous vous enverrons un mail de réinitialisation de mot de passe.",
+
+  "reinitialisation:titreForm": "Réinitialisation de mot de passe",
+  "reinitialisation:descriptionForm": "Créer un nouveau mot de passe pour accéder à votre compte <strong>Predictmarket</strong>.",
+
+  "gotoConnection": "Aller vers la connexion",
+  "congrats": "Félicitation !",
+  "felicitation:descriptionForm": "Votre compte a été créé avec succès. Vous pouvez maintenant vous connecter et accéder à votre compte.",
+
+  "envoiEmail:titreForm": "Envoi d'e-mail",
+  "envoiEmail:descriptionForm": "Avant de terminer, nous avons besoin de votre adresse e-mail pour activer votre compte.",
+  "addEmail": "Ajouter un adresse e-mail.",
+  "emailInvalid": "Adresse email non valide.",
+  "emailSent": "Email envoyé",
+  "fakeEmail": "Fake adresse email non acceptable.",
+  "emailAlreadyExist": "L'adresse Email existe déjà",
+
+  "emailNoAccountAssociated": "Adresse email rattachée à aucun compte",
+  "linkMailMessage": "E-mail envoyé, le lien réapparaîtra dans",
+  "emailSentMessage": "Consulter votre boîte mail pour compléter votre demande de réinitialisation",
+  "textSubmit": "Envoyer",
+
+  "verificationSms:descriptionForm": "Pour commencer, veuillez entrer le code d'activation envoyé au",
+  "accountSuspended": "Votre compte a été suspendu. Si vous souhaitez obtenir des informations complémentaires, vous pouvez nous contacter à l’adresse",
+  "emailOrpasswordInvalid": "L'adresse email ou le mot de passe est invalide",
+
+  "vericationEmail:titreForm": "Vérification e-mail",
+  "verifyYourEmail": "Pour terminer votre inscription, veuillez vérifier l'e-mail que nous avons envoyé à l'adresse suivante",
+  "verifySpam": "Pensez à verifier votre spam.",
+
+  "resetPassword:message": "Mot de passe réinitialisé !",
+  "successPwd:descriptionForm": "Votre mot de passe a été réinitialisé avec succès. Vous pouvez maintenant vous connectez."
+}

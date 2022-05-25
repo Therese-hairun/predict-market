@@ -1,0 +1,54 @@
+{
+  "connexion": "Connection",
+  "left-thanks": "Log in to your",
+  "right-thanks": " account and see your crypto predictions.",
+  "login": "Log in",
+  "remember-me": "Remember me",
+  "forgotten-password": "Forgot your password ?",
+  "no-account": "Don't have an account yet ?",
+  "subscribe": "Sign in",
+  "welcome": "Welcome to",
+  "emailResent": "Email resent",
+  "buttonWillAppear": "The button will appear in",
+  "didntReceiveMail": "Didn't receive an email? Check your spam or click the button below.",
+
+  "logIn": "Log in",
+  "haveAccount": "You already have an account?",
+  "resendMail": "Resend email",
+  "info:link": "If didn't receive an email yet, click the link",
+  "info:link1": "below to resend it.",
+
+  "forgetPassword:titreForm": "Password recovery",
+  "forgetPassword:descriptionForm": "Complete the field below. We will send you an email to reset your password. ",
+
+  "reinitialisation:titreForm": "Password reset",
+  "reinitialisation:descriptionForm": "Create a new password to access your <strong> Predictmarket </strong> account.",
+
+  "gotoConnection": "Go to Log in",
+  "congrats": "Congratulation !",
+  "felicitation:descriptionForm": "Your account has been successfully created. You can now log in and access your account.",
+
+  "envoiEmail:titreForm": "Send e-mail",
+  "envoiEmail:descriptionForm": "Before we finished, we need your email address to activate your account.",
+  "addEmail": "Add an email address.",
+  "emailInvalid": "Email address Invalid.",
+  "emailSent": "Email sent",
+  "fakeEmail": "Fake email address not acceptable.",
+  "emailAlreadyExist": "Email address already exists",
+
+  "emailNoAccountAssociated": "Email address associated with no account",
+  "linkMailMessage": "Email sent, the link will reappear in",
+  "emailSentMessage": "Consult your mailbox to complete your reset request",
+  "textSubmit": "Send",
+
+  "verificationSms:descriptionForm": "To get started, please enter the activation code sent to",
+  "accountSuspended": "Your account has been suspended. If you would like more information, you can contact us at",
+  "emailOrpasswordInvalid": "Email address or password is invalid",
+
+  "vericationEmail:titreForm": "Email verification",
+  "verifyYourEmail": "To complete your registration, please check the email we sent to the following address",
+  "verifySpam": "Remember to check your spam.",
+
+  "resetPassword:message": "Password reset !",
+  "successPwd:descriptionForm": "Your password has been successfully reset. You can now log in."
+}
